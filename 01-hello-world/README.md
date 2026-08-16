@@ -98,4 +98,4 @@ fun main() {
     println("$name is $age years old")
 }
 ```
-[Prochaine étape](02-basic-types/README.md)
+[Prochaine étape](../02-basic-types/README.md)
