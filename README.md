@@ -6,12 +6,12 @@ This repository serves as a structured reference guide and practice workspace fo
 
 ## Table of Contents
 
-### 1. Hello World
+### [1. Hello World](01-hello-world/README.md)
 * Variables
 * String templates
 * Practice
 
-### 2. Basic Types
+### [2. Basic Types](02-basic-types/README.md)
 * Practice
 
 ### 3. Collections
