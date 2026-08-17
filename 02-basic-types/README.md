@@ -31,3 +31,40 @@ Au total, Kotlin possède les types de base suivants :
 | [Entiers non signés](https://kotlinlang.org/docs/numbers.html#unsigned-integers) | `UByte`, `UShort`, `UInt`, `ULong` | `val score: UInt = 100u` |
 | [Nombres à virgule flottante](https://kotlinlang.org/docs/numbers.html#floating-point-types) | `Float`, `Double` | `val currentTemp: Float = 24.5f`<br>`val price: Double = 19.99` |
 | [Booléens](https://kotlinlang.org/docs/booleans.html) | `Boolean` | `val isEnabled: Boolean = true` |
+| [Caractères](https://kotlinlang.org/docs/characters.html) | `Char` | `val separator: Char = ','` |
+| [Chaînes de caractères](https://kotlinlang.org/docs/strings.html) | `String` | `val message: String = "Hello, world!"` |
+
+Pour plus d'informations sur les types de base et leurs propriétés, consultez la [vue d'ensemble des types](https://kotlinlang.org/docs/basic-types.html).
+
+Fort de ces connaissances, vous pouvez déclarer des variables et les initialiser plus tard. Kotlin peut gérer cela tant que les variables sont initialisées avant leur première lecture.
+
+Pour déclarer une variable sans l'initialiser, spécifiez son type avec `:`. Par exemple :
+
+```kotlin
+fun main() {
+    // Variable déclarée sans initialisation
+    val d: Int
+    
+    // Variable initialisée
+    d = 3
+
+    // Variable explicitement typée et initialisée
+    val e: String = "hello"
+
+    // Les variables peuvent être lues car elles ont été initialisées
+    println(d) // 3
+    println(e) // hello
+}
+```
+Si vous n'initialisez pas une variable avant qu'elle ne soit lue, vous obtiendrez une erreur :
+
+```kotlin
+fun main() {
+    // Variable déclarée sans initialisation
+    val d: Int
+
+    // Déclenche une erreur
+    println(d)
+    // Variable 'd' must be initialized
+}
+```
