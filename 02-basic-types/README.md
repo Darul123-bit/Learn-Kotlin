@@ -19,3 +19,15 @@ fun main() {
 
     println(customers) // 10
 }
+```
+
+> `+=`, `-=`, `*=`, `/=`, et `%=` sont des opérateurs d'affectation augmentée (*augmented assignment operators*). Pour plus d'informations, consultez la documentation sur les [Augmented assignments](https://kotlinlang.org/docs/operator-overloading.html#augmented-assignments).
+
+Au total, Kotlin possède les types de base suivants :
+
+| Catégorie | Types de base | Exemple de code |
+| --- | --- | --- |
+| [Entiers](https://kotlinlang.org/docs/numbers.html#integer-types) | `Byte`, `Short`, `Int`, `Long` | `val year: Int = 2020`<br>`val amount: Long = 350_000_000` |
+| [Entiers non signés](https://kotlinlang.org/docs/numbers.html#unsigned-integers) | `UByte`, `UShort`, `UInt`, `ULong` | `val score: UInt = 100u` |
+| [Nombres à virgule flottante](https://kotlinlang.org/docs/numbers.html#floating-point-types) | `Float`, `Double` | `val currentTemp: Float = 24.5f`<br>`val price: Double = 19.99` |
+| [Booléens](https://kotlinlang.org/docs/booleans.html) | `Boolean` | `val isEnabled: Boolean = true` |
