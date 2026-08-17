@@ -57,3 +57,16 @@ fun main() {
     // The first item in the list is: triangle
 }
 ```
+Pour obtenir le premier ou le dernier élément d'une liste, utilisez respectivement les fonctions `.first()` et `.last()` :
+
+
+```kotlin
+fun main() {
+    val readOnlyShapes = listOf("triangle", "square", "circle")
+    println("The first item in the list is: ${readOnlyShapes.first()}")
+    // The first item in the list is: triangle
+}
+```
+
+>Les fonctions `.first()` et `.last()` sont des exemples de fonctions d'extension. Pour appeler une fonction d'extension sur un objet, écrivez le nom de la fonction après l'objet, séparé par un point ..
+Les fonctions d'extension sont abordées en détail dans le parcours intermédiaire. Pour l'instant, vous avez seulement besoin de savoir comment les appeler`.`
