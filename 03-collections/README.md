@@ -68,5 +68,40 @@ fun main() {
 }
 ```
 
+To get the number of items in a list, use the `.count()` function:
+
 >Les fonctions `.first()` et `.last()` sont des exemples de fonctions d'extension. Pour appeler une fonction d'extension sur un objet, écrivez le nom de la fonction après l'objet, séparé par un point ..
 Les fonctions d'extension sont abordées en détail dans le parcours intermédiaire. Pour l'instant, vous avez seulement besoin de savoir comment les appeler`.`
+
+```kotlin
+fun main() {
+    val readOnlyShapes = listOf("triangle", "square", "circle")
+    println("This list has ${readOnlyShapes.count()} items")
+    // This list has 3 items
+}
+```
+
+To check that an item is in a list, use the [`in`]() operator:
+
+```kotlin
+fun main() {
+    val readOnlyShapes = listOf("triangle", "square", "circle")
+    println("circle" in readOnlyShapes)
+    // true
+}
+```
+
+To add or remove items from a mutable list, use [`.add()`]() and [`.remove()`]() functions respectively:
+
+```kotlin
+fun main() {
+    val shapes: MutableList<String> = mutableListOf("triangle", "square", "circle")
+    // Add "pentagon" to the list
+    shapes.add("pentagon")
+    println(shapes)
+    // [triangle, square, circle, pentagon]
+    // Remove the first "pentagon" from the list
+    shapes.remove("pentagon")
+    println(shapes)
+    // [triangle, square, circle]
+}
