@@ -44,7 +44,7 @@ fun main() {
 }
 ```
 
-> Les variables peuvent être déclarées en dehors de la fonction `main()` au début de votre programme. Les variables déclarées de cette manière sont dites déclarées au **niveau supérieur** `*top level*`.
+> Les variables peuvent être déclarées en dehors de la fonction `main()` au début de votre programme. Les variables déclarées de cette manière sont dites déclarées au **niveau supérieur** *`top level`*.
 
 Comme `customers` est une variable mutable, sa valeur peut être réassignée après sa déclaration.
 
