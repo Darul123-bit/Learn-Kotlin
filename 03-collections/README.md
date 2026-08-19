@@ -105,3 +105,6 @@ fun main() {
     println(shapes)
     // [triangle, square, circle]
 }
+```
+
+![Etape suivante](../04-control-flow/README.md)
