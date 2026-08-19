@@ -107,4 +107,4 @@ fun main() {
 }
 ```
 
-![Etape suivante](../04-control-flow/README.md)
+[Etape suivante](../04-control-flow/README.md)
